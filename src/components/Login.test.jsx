@@ -23,7 +23,7 @@ describe("LoginInput component", () => {
   it("should handle username typing correctly", async () => {
     // Arrange
     render(<LoginInput login={() => {}} />);
-    const emailInput = await screen.getByPlaceholderText("Emai");
+    const emailInput = await screen.getByPlaceholderText("Ema");
 
     // Action
     await userEvent.type(emailInput, "email@test.com");
