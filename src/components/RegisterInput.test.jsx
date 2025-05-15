@@ -1,6 +1,12 @@
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
-import RegisterInput from '../components/RegisterInput';
+/* eslint-disable no-unused-expressions */
+import React from 'react';
+import {
+  render, screen, fireEvent, waitFor,
+} from '@testing-library/react';
+import {
+  describe, it, expect, vi,
+} from 'vitest';
+import RegisterInput from './RegisterInput';
 
 describe('RegisterInput', () => {
   it('should render the RegisterInput form with inputs and button', () => {
@@ -11,8 +17,11 @@ describe('RegisterInput', () => {
     render(<RegisterInput register={registerMock} />);
 
     // Assert: Check if the title, subtitle, inputs, and button are rendered
+    // eslint-disable-next-line no-unused-expressions
     expect(screen.getByRole('heading', { level: 2, name: 'Join IThread' })).to.exist;
+    // eslint-disable-next-line no-unused-expressions
     expect(screen.getByPlaceholderText('Full Name')).to.exist;
+    // eslint-disable-next-line no-unused-expressions
     expect(screen.getByPlaceholderText('Email')).to.exist;
     expect(screen.getByPlaceholderText('Password')).to.exist;
     expect(screen.getByText('REGISTER')).to.exist;

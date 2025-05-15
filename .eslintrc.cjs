@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "eslint-config-airbnb",
   ],
-  ignorePatterns: ["dist", "public", ".eslintrc.cjs"],
+  ignorePatterns: ["dist", "public", ".eslintrc.cjs", "*.test.js", "*.test.jsx"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
