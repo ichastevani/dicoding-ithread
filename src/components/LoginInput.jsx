@@ -1,8 +1,11 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import useInput from '../hooks/useInput';
 import '../styles/Login.css';
 
-function LoginInput({ login }) {
+function LoginInput({
+  login,
+}) {
   const [email, onEmailChange] = useInput('');
   const [password, onPasswordChange] = useInput('');
 
@@ -20,6 +23,7 @@ function LoginInput({ login }) {
       <form className="login-form" onSubmit={handleSubmit}>
         <input
           type="email"
+          id="email"
           className="login-input"
           placeholder="Email"
           value={email}
@@ -28,6 +32,7 @@ function LoginInput({ login }) {
         />
         <input
           type="password"
+          id="password"
           className="login-input"
           placeholder="Password"
           value={password}

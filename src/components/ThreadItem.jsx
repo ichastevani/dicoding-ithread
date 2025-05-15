@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { FaComments, FaThumbsUp, FaThumbsDown } from 'react-icons/fa6';

@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import useInput from '../hooks/useInput';
 import '../styles/Register.css';

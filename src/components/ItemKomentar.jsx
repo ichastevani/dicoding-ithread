@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa6';
 import { postedAt } from '../utils';
